@@ -1,5 +1,5 @@
 A smart backup perl script that uses various system tools to compress given file types. File type support is user
-extendable via perl hash %user_extensions in $HOME/.smart-backup which smart-backup reads. Wave and netpbm PPM files
+extensible via perl hash %user_extensions in $HOME/.smart-backup which smart-backup reads. Wave and netpbm PPM files
 are supported by default.
 In the backup archive, all compressed files will be appended with the '.smrtbak' extension and a 'restore.sh' shell
 script will be generated, enabling the archive contents to either be restored to their original location or another
