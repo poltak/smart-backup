@@ -6,13 +6,13 @@ script will be generated, enabling the archive contents to either be restored to
 location specified by $1.
 Also supported is an experimental differential backup mode, enabled via the -d flag.
 
-Instructions:
+###Instructions:
 The 'smart-backup' script should be packaged as executable, if not 'chmod +x' it and run it from the command line.
 CLI args are as specified:
 smart-backup <source-path> <destination-path>                           # For standard archive mode.
 smart-backup -d <old-backup-path> <source-path> <destination-path>      # For 'experimental' diff archive mode.
 
-Limitations/TODO:
+###Limitations/TODO:
 -The differential backup mode works for backing up files that have either been modified or are new in the source
 directory, but not for new or newly modified files from the old backup directory. i.e, It does a uni-directional diff.
 I'm not sure if it was meant to be bi-directional, but implementing it as bi-directional would require lots of changes,
