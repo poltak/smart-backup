@@ -10,11 +10,11 @@ Also supported is an experimental differential backup mode, enabled via the -d f
 The 'smart-backup' script should be packaged as executable, if not 'chmod +x' it and run it from the command line.
 CLI args are as specified:
 
-*For standard archive mode.*<br />
-smart-backup <source-path> <destination-path>
+*For standard archive mode:*<br />
+smart-backup \[source-path\] \[destination-path\]
 
-*For 'experimental' diff archive mode.*<br />
-smart-backup -d <old-backup-path> <source-path> <destination-path>
+*For 'experimental' diff archive mode:*<br />
+smart-backup -d \[old-backup-path\] \[source-path\] \[destination-path\]
 
 ###Limitations/TODO:
 -   The differential backup mode works for backing up files that have either been modified or are new in the source
